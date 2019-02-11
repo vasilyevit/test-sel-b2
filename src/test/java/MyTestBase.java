@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.titleIs;
 
-public class MyFirstTest {
+public class MyTestBase {
     public WebDriver driver;
     public WebDriverWait wait;
 
@@ -18,17 +18,18 @@ public class MyFirstTest {
         wait = new WebDriverWait(driver, 10);
     }
 
-    @Test
+    /*@Test
     public void myFirstTest(){
         driver.get("https://duckduckgo.com/");
         driver.findElement(By.name("q")).sendKeys("sel-b2");
         driver.findElement(By.id("search_button_homepage")).click();
         wait.until(titleIs("sel-b2 at DuckDuckGo"));
-    }
+    }*/
 
     @After
     public void stop() {
         driver.quit();
+        System.out.print("quit");
         driver = null;
     }
 }
