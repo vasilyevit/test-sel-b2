@@ -8,8 +8,8 @@ public class Test_8 extends MyTestSupport {
     @Test
     public void myFirstTest() throws Exception{
         driver.get("http://localhost/litecart/en/");
-        waitXpath("//li[@class='product column shadow hover-light']");
-        List<WebElement> product = driver.findElements(By.xpath("//li[@class='product column shadow hover-light']"));
+        waitXpath("//li[contains(@class,'product')]");
+        List<WebElement> product = driver.findElements(By.xpath("//li[contains(@class,'product')]"));
         boolean chk = true;
         for ( WebElement we: product) {
             if (we.findElements(By.xpath(".//a/div/div[contains(@class,'sticker')]")).size() != 1){
