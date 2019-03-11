@@ -1,3 +1,5 @@
+package tests;
+
 import com.google.common.collect.Ordering;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -5,7 +7,7 @@ import org.openqa.selenium.WebElement;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/*
 public class Test_9_1 extends MyTestSupport {
     @Test
     public void test_Task_9_1() throws Exception{
@@ -13,7 +15,7 @@ public class Test_9_1 extends MyTestSupport {
         driver.findElement(By.name("username")).sendKeys("admin");
         driver.findElement(By.name("password")).sendKeys("admin");
         driver.findElement(By.name("login")).click();
-        System.out.println("/************** Задание 9.1 **************/");
+        System.out.println("/************** Задание 9.1 **************");
         ArrayList<String> countriesList = new ArrayList<String>();
         List <WebElement> countries = driver.findElements(By.xpath("//table[contains(@class,'dataTable')]//tr[contains(@class,'row')]/td[5]/a"));
         for (WebElement we: countries){
@@ -47,4 +49,4 @@ public class Test_9_1 extends MyTestSupport {
             driver.navigate().back();
         }
     }
-}
+}*/

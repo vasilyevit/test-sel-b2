@@ -1,13 +1,15 @@
+package tests;
+/*
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Test_8 extends MyTestSupport {
+public class Test_8 extends MyTestBase {
     @Test
     public void myFirstTest() throws Exception{
-        driver.get("http://localhost/litecart/en/");
+        driver.get("http://litecart.stqa.ru/en/");
         waitXpath("//li[contains(@class,'product')]");
         List<WebElement> product = driver.findElements(By.xpath("//li[contains(@class,'product')]"));
         boolean chk = true;
@@ -22,4 +24,4 @@ public class Test_8 extends MyTestSupport {
         }
         Thread.sleep(1000);
     }
-}
+}*/

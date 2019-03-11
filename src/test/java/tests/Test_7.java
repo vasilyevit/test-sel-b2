@@ -1,3 +1,5 @@
+package tests;
+
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -5,8 +7,8 @@ import org.openqa.selenium.WebElement;
 import java.util.ArrayList;
 import java.util.List;
 
-
-public class Test_7 extends MyTestSupport {
+/*
+public class Test_7 extends MyTestBase {
     @Test
     public void myFirstTest() throws Exception{
         driver.get("http://localhost/litecart/admin/");
@@ -33,11 +35,11 @@ public class Test_7 extends MyTestSupport {
                 for (int j = 0;j < subMenuName.size();j++){
                     driver.findElement(By.xpath("//ul[@class='docs']/li/a/span[@class='name' and text()='"+subMenuName.get(j)+"']")).click();
                     if (driver.findElements(By.xpath("//h1")).size() == 1){
-                        System.out.println("Основное меню - "+menuName.get(i)+" подменю - "+subMenuName.get(j)+".Test_2_3 Заголовок есть!");
+                        System.out.println("Основное меню - "+menuName.get(i)+" подменю - "+subMenuName.get(j)+".tests.Test_2_3 Заголовок есть!");
                     }
                 }
             }
         }
         Thread.sleep(1000);
     }
-}
+}*/

@@ -1,3 +1,5 @@
+package tests;
+/*
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -26,4 +28,4 @@ public class Test_14 extends MyTestSupport {
             driver.switchTo().window(mainWindow);
         }
     }
-}
+}*/

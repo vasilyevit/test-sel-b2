@@ -1,3 +1,5 @@
+package tests;
+/*
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -32,4 +34,4 @@ public class Test_17 extends MyTestSupport {
             driver.navigate().back();
         }
     }
-}
+}*/

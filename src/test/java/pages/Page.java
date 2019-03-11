@@ -1,16 +1,24 @@
+package pages;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
+import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
 
-import static org.openqa.selenium.support.ui.ExpectedConditions.*;
+public class Page {
+    protected WebDriver driver;
+    protected WebDriverWait wait;
 
-public class MyTestSupport extends MyTestBase{
+    public Page(WebDriver driver) {
+        this.driver = driver;
+        wait = new WebDriverWait(driver, 10);
+    }
+
     /**
      * Ждем появления элемента
      * @param xpath - XPath элемента
@@ -32,7 +40,6 @@ public class MyTestSupport extends MyTestBase{
         } finally {
             driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         }
-
     }
 
     public ExpectedCondition<String> anyWindowOtherThan(final Set<String> oldWindows) {

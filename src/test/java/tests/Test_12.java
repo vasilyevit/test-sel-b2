@@ -1,3 +1,5 @@
+package tests;
+/*
 import org.junit.Test;
 import org.openqa.selenium.By;
 import java.text.DateFormat;
@@ -33,4 +35,4 @@ public class Test_12 extends MyTestSupport {
         driver.findElement(By.xpath("//select[@name='purchase_price_currency_code']/option[text()='US Dollars']")).click();
         driver.findElement(By.xpath("//button[@name='save']")).click();
     }
-}
+}*/

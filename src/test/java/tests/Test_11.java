@@ -1,3 +1,5 @@
+package tests;
+/*
 import org.junit.Test;
 import org.openqa.selenium.By;
 import java.text.DateFormat;
@@ -6,7 +8,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class Test_11 extends MyTestSupport {
-    
+
     @Test
     public void createUser() throws Exception {
         DateFormat dateFormat = new SimpleDateFormat("dd_MM_yyyy_HH_mm_ss");
@@ -33,4 +35,4 @@ public class Test_11 extends MyTestSupport {
         driver.findElement(By.xpath("//a[text()='Logout']")).click();
         Thread.sleep(3000);
     }
-}
+}*/
